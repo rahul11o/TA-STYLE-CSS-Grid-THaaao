@@ -1,0 +1,88 @@
+@media screen and (min-width:768px)  {
+    html{
+        font-size: 16px;
+    }
+.navbar{
+    position: absolute;
+    top: 0;
+    left:  2rem;
+    right: 2rem;
+   ul{
+    display: flex;
+    position: static;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    padding: 0;
+   
+   } 
+   label,input{
+    display: none;
+   }
+}
+
+/* Main */
+
+/* Hero-Section */
+.hero-section {
+    div img{
+        object-fit: cover;
+    }
+   
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 95vh;
+    grid-template-areas:'hero-image hero-article';
+    article{
+        display: grid;
+        align-self: center;
+        .btn{
+           width: 25%;
+           padding: 1rem 2rem;
+           border: 3px solid $dark-pr;
+           text-transform: uppercase;
+           font-weight: 600;
+        }
+    }
+}
+
+.skills-section{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:'skills-article skills-image my-skills';
+    article{
+        grid-column: span 2;
+    }
+}
+
+.service-section{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40vh ;
+    grid-template-areas: 'srvc-art-one srvc-art-two srvc-art-three srvc-art-four';
+}
+
+.exp-edu-section{
+    >div:first-child, >div:last-child {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.contact-section{
+    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-areas: 
+    'cont-hello cont-img cont-add';
+    .cont-hello{
+       grid-column: span 2;
+    }
+}
+.footer{
+    iframe{
+        height: 45vh;
+    }
+    small{
+        padding: 4rem 0;
+    }
+}
+
+
+
+}
